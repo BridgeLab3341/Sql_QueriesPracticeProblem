@@ -32,3 +32,17 @@ Select Min(Salary) as Minimum_Salary from Customer
 Select Max(Salary) as MAximum_Salary from Customer
 Select Sum(Salary) as Total_Salary from Customer
 Select AVG(Salary) as Average_Salary from Customer
+--UC-8
+Create Table Orders(Order_Id int Primary key identity,Product_Name varchar(30),Quantity int,Rating int,Customer_Id int Foreign key References Customer(Customer_Id))
+Select * from Orders
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Soap',1000,4,2)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('WashingSoda',1200,3,1)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Tyres',1400,3,2)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Wheels',1500,4,3)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Clothes',1100,3,4)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Battery',1150,2,6)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Bulbs',9000,4,5)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Bags',1300,4,7)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Wheels',1500,4,3)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Clothes',1100,3,4)
+Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Battery',1150,2,6)
