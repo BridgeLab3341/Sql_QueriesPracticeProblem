@@ -27,3 +27,8 @@ Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('mantro'
 Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('Jhosep','9678574547','India','India',100000,'634655')
 
 Select * from Customer where Country='India'
+--UC-7
+Select Min(Salary) as Minimum_Salary from Customer
+Select Max(Salary) as MAximum_Salary from Customer
+Select Sum(Salary) as Total_Salary from Customer
+Select AVG(Salary) as Average_Salary from Customer
