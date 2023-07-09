@@ -8,4 +8,10 @@ Insert into Customer (Name,Phone,Address) values('Anil','8899007766','Karnataka'
 Insert into Customer (Name,Phone,Address) values('Manju','9899880077','Delhi')
 Insert into Customer (Name,Phone,Address) values('Ganesh','8787666876','Mumbai')
 
-Select * from Customer
+Select * from Customer 
+--UC-4
+Alter table Customer Add Country varchar(20),Salary Bigint,Pincode varchar(10)
+Update Customer set Country='India',Salary=30000,Pincode='562322';
+Update Customer set Country='England',Salary=29000,Pincode='234234' where Customer_Id=2
+Update Customer set Country='Russia',Salary=28000,Pincode='634445' where Customer_Id=3
+Update Customer set Country='Germany',Salary=29000,Pincode='345444' where Customer_Id=4
