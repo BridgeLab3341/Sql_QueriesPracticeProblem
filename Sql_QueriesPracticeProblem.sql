@@ -46,3 +46,21 @@ Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Bags',1300
 Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Wheels',1500,4,3)
 Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Clothes',1100,3,4)
 Insert into Orders (Product_Name,Quantity,Rating,Customer_Id) values('Battery',1150,2,6)
+--UC-9
+--(Inner Join)
+Select * from Customer Inner Join Orders on 
+Orders.Customer_Id = Customer.Customer_Id
+
+--(Left Join)
+Select * from Customer Left Join Orders on
+Orders.Customer_Id = Customer.Customer_Id
+
+--(Right Join)
+Select * from Customer Right Join Orders on
+Orders.Customer_Id = Customer.Customer_Id
+
+--(Full Join)
+Select A.Name As Name1, B.Name As Name2,A.Country 
+From Customer A, Customer B Where A.Customer_Id	<> B.Customer_Id
+And A.country = B.Country
+Order By A.Country;
