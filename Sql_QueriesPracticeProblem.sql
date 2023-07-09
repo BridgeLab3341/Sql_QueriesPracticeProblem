@@ -20,3 +20,10 @@ Update Customer set Phone='9899880077',Address='Banglore',Country='India' where 
 Update Customer set Phone='8787666876',Address='Chennai',Country='India' where Name='Anil'
 Update Customer set Phone='8899007766',Address='Delhi',Country='India' where Name='Manju'
 Update Customer set Phone='9900876655',Address='Mumbai',Country='India' where Name='Ganesh'
+--UC-6
+Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('Jhon','9678574547','Paris','England',100000,'345456')
+Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('Jordan','9678574547','Germany','Germany',100000,'343232')
+Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('mantro','9678574547','France','France',100000,'866745')
+Insert into Customer (Name,Phone,Address,Country,Salary,Pincode) values('Jhosep','9678574547','India','India',100000,'634655')
+
+Select * from Customer where Country='India'
